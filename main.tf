@@ -13,8 +13,12 @@ provider "azurerm" {
 }
 
 
+resource "azurerm_resource_group" "vip-rg1" {
+  name     = "test-rgvip1"
+  location = "West US"
+}
+
 resource "azurerm_resource_group" "rg-vips" {
   name     = "vipintest"
   location = "West US"
   }
-
