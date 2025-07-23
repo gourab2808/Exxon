@@ -12,3 +12,9 @@ provider "azurerm" {
   features {}
 }
 
+
+resource "azurerm_resource_group" "rg-vips" {
+  name     = "vipintest"
+  location = "West US"
+  }
+
